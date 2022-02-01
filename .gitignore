@@ -3,3 +3,5 @@
 0x00-csharp-hello_world/0-new_project/
 obj/
 bin/
+.vscode/launch.json
+.vscode/tasks.json
