@@ -6,7 +6,11 @@ namespace _3_print_alphabt
     {
         static void Main(string[] args)
         {
-            Console.Write("abcdfghijklmnoprstuvwxyz");
+            for (char c = 'a'; c <= 'z'; c++)
+            {
+                if (c != 'q' && c != 'e')
+                    Console.Write(c);
+            }
         }
     }
 }

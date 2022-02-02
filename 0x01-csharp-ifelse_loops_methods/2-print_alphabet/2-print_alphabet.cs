@@ -6,7 +6,8 @@ namespace _2_print_alphabet
     {
         static void Main(string[] args)
         {
-            Console.Write("abcdefghijklmnopqrstuvwxyz");
+            for (char c = 'a'; c <= 'z'; c++)
+                Console.Write(c);
         }
     }
 }
