@@ -9,7 +9,7 @@ class MyQueue
 		Console.WriteLine("Number of items: {0}", aQueue.Count);
 		// First item in queue
 		if (aQueue.Count > 0)
-			Console.WriteLine("Top item: {0}", aQueue.Peek());
+			Console.WriteLine("First item: {0}", aQueue.Peek());
 		else
 			Console.WriteLine("Queue is empty");
 		// Queue contains <search>
