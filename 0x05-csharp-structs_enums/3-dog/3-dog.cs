@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 enum Rating {Good, Great, Excellent}
 
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
@@ -16,7 +14,5 @@ struct Dog {
 		this.rating = rating;
 	}
 
-	public override string ToString(){
-		return $"Dog Name: {this.name}\nAge: {this.age}\nOwner: {this.owner}\nRating: {this.rating}";
-	}
+	public override string ToString() => $"Dog Name: {this.name}\nAge: {this.age}\nOwner: {this.owner}\nRating: {this.rating}";
 }
