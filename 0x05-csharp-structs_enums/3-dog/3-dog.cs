@@ -18,9 +18,9 @@ struct Dog {
 
 	public override string ToString() {
 		return string.Join('\n',
-							$"Dog Name: {name}",
-							$"Age: {age}",
-							$"Owner: {owner}",
-							$"Rating: {rating}");
+							$"Dog Name: {this.name}",
+							$"Age: {this.age}",
+							$"Owner: {this.owner}",
+							$"Rating: {this.rating}");
 	}
 }
