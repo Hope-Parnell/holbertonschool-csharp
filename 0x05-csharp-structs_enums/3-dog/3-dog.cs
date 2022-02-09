@@ -16,11 +16,7 @@ struct Dog {
 		this.rating = rating;
 	}
 
-	public override string ToString() {
-		return string.Join('\n',
-							$"Dog Name: {this.name}",
-							$"Age: {this.age}",
-							$"Owner: {this.owner}",
-							$"Rating: {this.rating}");
+	public override string ToString(){
+		return $"Dog Name: {this.name}\nAge: {this.age}\nOwner: {this.owner}\nRating: {this.rating}";
 	}
 }
