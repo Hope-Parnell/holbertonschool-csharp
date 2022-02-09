@@ -1,6 +1,4 @@
 enum Rating {Good, Great, Excellent}
-
-[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 struct Dog {
 	public string name;
 	public float age;
