@@ -3,7 +3,7 @@ namespace Enemies
 {
 	/// <summary>This is the Zombie class.</summary>
 	public class Zombie{
-		int health;
+		private int health;
 		/// <summary>Constructor for Zombie sets health to 0.</summary>
 		public Zombie(){
 			this.health = 0;
