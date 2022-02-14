@@ -12,8 +12,10 @@ namespace Text.Tests
         [Test]
         public void Test1()
         {
-            Assert.True(Str.IsPalindrome("RaceCar"));
-            Assert.True(Str.IsPalindrome("Race /Car. "));
+            Assert.True(Str.IsPalindrome("Racecar"));
+            Assert.True(Str.IsPalindrome("level"));
+            Assert.True(Str.IsPalindrome("A man, a plan, a canal: Panama."));
+            Assert.True(Str.IsPalindrome(""));
             Assert.False(Str.IsPalindrome("Test"));
         }
     }
