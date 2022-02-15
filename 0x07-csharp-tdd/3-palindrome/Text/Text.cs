@@ -2,10 +2,10 @@
 
 namespace Text
 {
-    /// <summary>Contains methods to be used on strings</summary>
+    /// <summary>Contains methods to be used on strings.</summary>
     public class Str
     {
-        /// <summary>Checks if a string is a palandrome</summary>
+        /// <summary>Checks if a string is a palandrome.</summary>
         public static bool IsPalindrome(string s){
             string s1 = "";
             foreach (char c in s){

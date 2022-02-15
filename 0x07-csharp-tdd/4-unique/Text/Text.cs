@@ -2,10 +2,10 @@
 
 namespace Text
 {
-    /// <summary>Contains methods to be used on strings</summary>
+    /// <summary>Contains methods to be used on strings.</summary>
     public class Str
     {
-        /// <summary>Returns the index of the first unique character in a string</summary>
+        /// <summary>Returns the index of the first unique character in a string.</summary>
         public static int UniqueChar(string s){
             for (int i = 0; i < s.Length; i++){
                 int ct = 0;
