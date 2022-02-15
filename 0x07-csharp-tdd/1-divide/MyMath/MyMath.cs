@@ -5,7 +5,7 @@ namespace MyMath
     /// <summary>Contains operations using matricies.</summary>
     public class Matrix
     {
-        /// <summary>Returns a new matrix whose contents is the original matrix divided by a number</summary>
+        /// <summary>Returns a new matrix whose contents is the original matrix divided by a number.</summary>
         public static int[,] Divide(int[,] matrix, int num){
             if (num == 0) {
                 Console.WriteLine("Num cannot be 0");
