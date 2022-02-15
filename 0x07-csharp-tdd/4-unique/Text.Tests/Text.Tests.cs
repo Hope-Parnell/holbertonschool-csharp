@@ -15,6 +15,8 @@ namespace Text.Tests
             Assert.AreEqual(Str.UniqueChar("test"), 1);
             Assert.AreEqual(Str.UniqueChar("aabbcc"), -1);
             Assert.AreEqual(Str.UniqueChar("abcbca"), -1);
+            Assert.AreEqual(Str.UniqueChar(""), -1);
+            Assert.AreEqual(Str.UniqueChar(null), -1);
             Assert.AreEqual(Str.UniqueChar("abbcc"), 0);
         }
     }
