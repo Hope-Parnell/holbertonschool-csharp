@@ -7,6 +7,8 @@ namespace Text
     {
         /// <summary>Returns the index of the first unique character in a string.</summary>
         public static int UniqueChar(string s){
+            if (s == null || s == "")
+                return -1;
             for (int i = 0; i < s.Length; i++){
                 int ct = 0;
                 foreach (char c in s){
