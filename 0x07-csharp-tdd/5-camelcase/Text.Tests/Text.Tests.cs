@@ -14,6 +14,7 @@ namespace Text.Tests
         {
             Assert.AreEqual(Str.CamelCase("jabdkj"), 1);
             Assert.AreEqual(Str.CamelCase(""), 0);
+            Assert.AreEqual(Str.CamelCase(null), 0);
             Assert.AreEqual(Str.CamelCase("testAThing"), 3);
             Assert.AreEqual(Str.CamelCase("camelCase"), 2);
         }
