@@ -63,7 +63,7 @@ public class Queue<T>{
 	}
 	/// <summary>Concatinates the Queue if it contains Strings or Chars.</summary>
 	public string Concatenate(){
-		if (head == null){
+		if (this.head == null){
 			Console.WriteLine("Queue is empty");
 			return null;
 		}
