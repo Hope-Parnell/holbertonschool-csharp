@@ -43,7 +43,7 @@ public class Queue<T>{
 		count--;
 		return hide.value;
 	}
-	/// <summary></summary>
+	/// <summary>Returns top value of Queue.</summary>
 	public T Peek(){
 		if (head == null){
 			Console.WriteLine("Queue is empty");
