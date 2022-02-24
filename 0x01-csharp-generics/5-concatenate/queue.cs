@@ -63,20 +63,20 @@ public class Queue<T>{
 	}
 	/// <summary>Concatinates the Queue if it contains Strings or Chars.</summary>
 	public string Concatenate(){
-            if(count == 0){
-                System.Console.WriteLine("Queue is empty");
-                return null;
-            }
-            if((Type)this.CheckType() != typeof(string) && (Type)this.CheckType() != typeof(char)){
-                System.Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
-                return null;
-            }
-            Node pn = head;
-            string temp = "";
-            while(pn != null){
-                temp += pn.value;
-                pn = pn.next;
-            }
-            return temp;
-        }
+		if (count == 0){
+			Console.WriteLine("Queue is empty");
+			return null;
+		}
+		if ((Type)this.CheckType() != typeof(string) && (Type)this.CheckType() != typeof(char)){
+			Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
+			return null;
+		}
+		string cat = "";
+		for (Node n = head; n != null; n = n.next){
+			cat += n.value;
+			if (this.CheckType() == typeof(string) && n.next != null)
+				cat += " ";
+		}
+		return cat;
+	}
 }
