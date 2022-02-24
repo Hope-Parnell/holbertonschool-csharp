@@ -67,7 +67,7 @@ public class Queue<T>{
 			Console.WriteLine("Queue is empty");
 			return null;
 		}
-		if (this.CheckType() != typeof(string) && this.CheckType() != typeof(char)){
+		if ((Type)this.CheckType() != typeof(string) && (Type)this.CheckType() != typeof(char)){
 			Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
 			return null;
 		}
