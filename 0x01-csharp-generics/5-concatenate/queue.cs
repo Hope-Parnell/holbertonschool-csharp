@@ -67,14 +67,14 @@ public class Queue<T>{
 			Console.WriteLine("Queue is empty");
 			return null;
 		}
-		if (typeof(T) != typeof(string) && typeof(T) != typeof(char)){
+		if (this.CheckType() != typeof(string) && this.CheckType() != typeof(char)){
 			Console.WriteLine("Concatenate() is for a queue of Strings or Chars only.");
 			return null;
 		}
 		string cat = "";
 		for (Node n = head; n != null; n = n.next){
 			cat += n.value;
-			if (typeof(T) == typeof(string) && n.next != null)
+			if (this.CheckType() == typeof(string) && n.next != null)
 				cat += " ";
 		}
 		return cat;
