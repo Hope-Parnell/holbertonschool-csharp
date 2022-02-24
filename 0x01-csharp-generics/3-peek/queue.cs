@@ -45,8 +45,10 @@ public class Queue<T>{
 	}
 	/// <summary></summary>
 	public T Peek(){
-		if (head == null)
+		if (head == null){
+			Console.WriteLine("Queue is empty");
 			return default(T);
+		}
 		return this.head.value;
 	}
 }
