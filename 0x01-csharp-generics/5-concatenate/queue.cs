@@ -72,11 +72,8 @@ public class Queue<T>{
 			return null;
 		}
 		string cat = "";
-		for (Node n = head; n != null; n = n.next){
+		for (Node n = head; n != null; n = n.next)
 			cat += n.value;
-			if (typeof(T) == typeof(string) && n.next != null)
-				cat += " ";
-		}
 		return cat;
 	}
 }
