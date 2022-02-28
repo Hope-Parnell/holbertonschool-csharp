@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 /// <summary>Base class containing name and string override.</summary>
 public abstract class Base{
